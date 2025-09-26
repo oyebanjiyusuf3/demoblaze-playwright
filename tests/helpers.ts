@@ -1,0 +1,1 @@
+export function uniqueUser(prefix: string = 'user'){ return `${prefix}_${Date.now()}`; }
