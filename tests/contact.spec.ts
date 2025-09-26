@@ -32,6 +32,5 @@ test('Cannot send message with empty fields in Contact modal', async ({ page }) 
 
   // Modal should still be visible (no successful submission)
   await expect(page.locator('#exampleModal')).toBeVisible();
-  // Optionally, check for a validation message if the app provides one
-  // await expect(page.locator('text=field are required')).toBeVisible();
+
 });
