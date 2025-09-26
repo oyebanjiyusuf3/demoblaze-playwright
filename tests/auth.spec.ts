@@ -3,7 +3,7 @@ import { BasePage } from '../pages/BasePage';
 import { Navbar } from '../pages/Navbar';
 import { SignUpModal } from '../pages/SignUpModal';
 import { LoginModal } from '../pages/LoginModal';
-import { uniqueUser } from './helpers';
+import { uniqueUser, getTestCredentials } from './helpers';
 
 test('Sign up then log in', async ({ page }) => {
   const base = new BasePage(page);
@@ -12,8 +12,7 @@ test('Sign up then log in', async ({ page }) => {
   const login = new LoginModal(page);
 
   await base.gotoHome();
-  const username = uniqueUser('playwright');
-  const password = 'P@ssword123';
+  const { username, password } = getTestCredentials();
 
   await nav.openSignUp();
   await signup.signUp(username, password);
@@ -29,8 +28,7 @@ test('Log out after logging in', async ({ page }) => {
   const login = new LoginModal(page);
 
   await base.gotoHome();
-  const username = uniqueUser('playwright-logout');
-  const password = 'P@ssword123';
+  const { username, password } = getTestCredentials();
 
   // Sign up and log in
   await nav.openSignUp();
