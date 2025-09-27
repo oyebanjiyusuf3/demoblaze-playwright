@@ -73,7 +73,3 @@ npm run report
 - **Playwright + TypeScript (POM) codebase**
 - **DemoBlaze Excel Test Documentation** (Test Plan, Test Cases with rationale, Issues Reporting with adjustments)
 - **README (this file)** – Submission overview
-
----
-
-✅ This structured approach shows **end-to-end quality ownership**: planning, automation, defect identification, and communication.
