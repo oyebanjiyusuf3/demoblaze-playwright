@@ -2,7 +2,7 @@
 
 ## 📋 Objective
 
-This submission demonstrates my **test planning, test case design, automation, and issue reporting** for the DemoBlaze demo application. The solution uses **Playwright + TypeScript** with the **Page Object Model (POM)** for maintainability, aligning with the assessment requirements.
+This submission demonstrates my **test planning, test case design, automation, and issue reporting** for the DemoBlaze demo application. The solution uses **Playwright + TypeScript** with the **Page Object Model (POM)** for maintainability.
 
 ## 📝 Test Plan
 
